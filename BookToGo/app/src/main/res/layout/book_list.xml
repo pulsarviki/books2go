@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/book_txt"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.2"
+        android:textColor="@color/font_gray"
+        android:gravity="center_vertical"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/book_price"
+        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:textColor="@color/font_gray"
+        android:gravity="left|center_vertical"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/show_details"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:background="@null"/>
+
+</LinearLayout>
