@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"/>
+
+            <ImageButton
+                android:id="@+id/show_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"/>
+
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id ="@+id/show_pic"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background ="@color/colorPrimary"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/show_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/feed"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textSize="18dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Feed"
+            android:textAlignment="center"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/logo_feed"
+            android:layout_marginLeft="20dp" />
+
+
+        <Button
+            android:id="@+id/puchaseHis"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:textSize="18dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Purchase history"
+            android:textAlignment="center"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/logo_history"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Post"
+            android:textSize="18dp"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/logo_post"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/message"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Message"
+            android:textSize="18dp"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/logo_message"
+            android:layout_marginLeft="20dp" />
+
+
+        <Button
+            android:id="@+id/sale"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Sale record"
+            android:textSize="18dp"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/log_sale"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:text="Logout"
+            android:textSize="18dp"
+            android:textColor="@color/font_gray"
+            android:paddingLeft="50dip"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/logo_logout"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
